@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site Metas -->
+  <meta name="keywords"
+    content="office interiors, office furniture, turnkey fit-out solutions, Dubai interior design, Measure International">
+  <meta name="description"
+    content="Measure International specializes in transforming workspaces with comprehensive office interior design and turnkey fit-out solutions in Dubai. Contact us to create your functional, stylish, and comfortable office environment.">
+  <meta name="author" content="Measure International">
+  <link rel="icon" href="images/favicon.png" type="image/gif">
+  <title>Measure International</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!-- Fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Lightbox Gallery-->
+  <link rel="stylesheet" href="css/ekko-lightbox.css">
+
+  <!-- Font Awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>Measure International</span>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-content2">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="service.html">Services</a>
+                <a href="Fit-Out.html">Fit-Out Process</a>
+                <a href="Office Interiors.html">Office Interiors</a>
+                <a href="Office Furniture.html">Office Furniture</a>
+                <a href="vasthu.html">VASTU Consultancy</a>
+                <a href="faq.html">FAQ</a>
+                <a href="Contac.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End header section -->
+
+  <!-- Slider section -->
+  <section class="slider_section position-relative">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="images/slider-bg.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="images/slider-bg2.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="images/slider-bg3.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn_box">
+        <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="detail-box">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <div class="inner_detail-box">
+          <h1 >Transform Your Workspace with Measure </h1>
+          
+          <p>Specialized in office interiors and furniture, we bring your vision to life with our comprehensive turnkey
+            fit-out solutions in Dubai.</p>
+          <div>
+            <a href="Contac.html" class="slider-link">BOOK A CONSULTATION</a>
+            <a href="service.html" class="slider-link">EXPLORE OUR SERVICES</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End slider section -->
+<!-- About section -->
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="images/index_about.jpg" alt="About Us" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>About Us</h2>
+          </div>
+          <p>Dedicated to excellence in office interiors and furniture, we bring over 20 years of expertise to every
+            project. Our mission is to create spaces that look stunning and enhance the well-being and productivity of
+            their occupants.</p>
+          <a href="about.html">Meet Our Team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+   .about_section .body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+  }
+
+  .about_section {
+    padding: 60px 0;
+    perspective: 1000px;
+  }
+
+  .about_section .img-box {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+   .about_section .img-box:hover {
+    transform: scale(1.05);
+  }
+
+   .about_section .detail-box {
+    transform: rotateY(-5deg);
+    transition: transform 0.5s;
+  }
+
+  .about_section:hover .detail-box {
+    transform: rotateY(0);
+  }
+
+   .about_section .heading_container h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+    margin-left: 4cm;
+    text-align: center;
+  }
+
+  .about_section:hover .heading_container h2 {
+    transform: translateZ(30px);
+  }
+
+   .about_section .detail-box p {
+    padding: 0.5cm;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    text-align: justify;
+  }
+
+   .about_section .detail-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5cm;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin-left: 4cm;
+    width: 6cm;
+    text-align: center;
+  }
+
+   .about_section .detail-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translateZ(-10px);
+    z-index: -1;
+    transition: transform 0.3s;
+  }
+
+   .about_section .detail-box a:hover {
+    background: #555;
+    transform: translateZ(10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+
+   .about_section .detail-box a:hover::before {
+    transform: translateZ(-20px);
+  }
+</style>
+
+
+   
+<!-- Services section -->
+<section class="service_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>Our Services</h2>
+    </div>
+    <div class="row" style="padding: 1cm;">
+      <div class="col-md-6 col-lg-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/Interior Design.jpg" alt="">
+          </div>
+          <div class="detail-box" style="margin-top: -3cm;">
+            <h5>Interior Design and Consultancy</h5>
+            <p style="padding: 0.5cm;">Bespoke interiors reflecting your brand identity and enhancing functionality.</p>
+            <a href="Office Interiors.html">Discover </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/service1.jpg" alt="">
+          </div>
+          <div class="detail-box" style="margin-top: -3cm;">
+            <h5 >Office Fit-Outs</h5>
+            <p style="padding: 0.71cm;">Transforming spaces into fully operational offices.</p>
+            <a href="Fit-Out.html">Discover</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mx-auto">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/furniture.jpg" alt="">
+          </div>
+          <div class="detail-box" style="margin-top: -3cm;">
+            <h5>Furniture Supply and Installation</h5>
+            <p style="padding: 0.45cm;">High-quality, ergonomic, and stylish furniture solutions.</p>
+            <a href="">Discover</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End services section -->
+
+<style>
+  .service_section {
+    padding: 60px 0;
+    perspective: 1000px;
+  }
+
+  .service_section .box {
+    background-color: #3a3f58;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 100px 20px 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    min-height: 150px;
+  }
+
+  .service_section .box:hover {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .service_section .img-box {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-left: 0.2cm;
+    margin-right: 4cm;
+  }
+
+  .service_section .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+
+  .service_section .box:hover .img-box {
+    transform: translateX(-50%) translateZ(50px);
+  }
+
+  .service_section .img-box:hover img {
+    transform: scale(1.05);
+  }
+
+  .service_section .detail-box h5 {
+    margin-top: -15cm;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    color: #ff6b5b;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .service_section .detail-box h5::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    z-index: -1;
+    filter: blur(3px);
+    transform: translateX(3px) translateY(3px);
+  }
+
+  .service_section .detail-box p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .service_section .detail-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e45441;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 0.5cm;
+  }
+
+  .service_section .detail-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translateZ(-10px);
+    z-index: -1;
+    transition: transform 0.3s;
+  }
+
+  .service_section .detail-box a:hover {
+    background: #d9432f;
+    transform: translateZ(10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .service_section .detail-box a:hover::before {
+    transform: translateZ(-20px);
+  }
+</style>
+
+
+  <!-- gallery section -->
+
+  <div class="gallery_section layout_padding2">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2>
+          Gallery
+        </h2>
+      </div>
+      <div class="row">
+        <div class=" col-sm-8 col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/g1.jpg" alt="">
+            <a href="images/g1.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 px-0">
+          <div class="img-box">
+            <img src="images/g2.jpg" alt="">
+            <a href="images/g2.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-0">
+          <div class="img-box">
+            <img src="images/g3.jpg" alt="">
+            <a href="images/g3.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-0">
+          <div class="img-box">
+            <img src="images/g4.jpg" alt="">
+            <a href="images/g4.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 px-0">
+          <div class="img-box">
+            <img src="images/g5.jpg" alt="">
+            <a href="images/g5.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/g6.jpg" alt="">
+            <a href="images/g6.jpg" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          View All
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- end gallery section -->
+
+
+  
+
+  <!-- Testimonials section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Testimonial</h2>
+      </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Client Name, Company</h6>
+                    </div>
+                    <p>"Measure International transformed our office into a modern and efficient workspace. Their
+                      attention to detail and commitment to quality is unmatched."</p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client2.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Client Name, Company</h6>
+                    </div>
+                     <p>"Their expertise in office interiors is outstanding. They created a space that perfectly fits
+                       our needs and enhances our productivity. Highly recommended!"</p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/client3.jpg" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>Client Name, Company</h6>
+                    </div>
+                    <p>"Measure International exceeded our expectations. The new office design has not only improved our
+                      aesthetic but also our work efficiency. A fantastic job!"</p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End testimonials section -->
+
+     <!-- Contact section -->
+     <section class="contact_section">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-7 col-lg-6">
+             <div class="form_container">
+               <div class="heading_container">
+                 <h2>Contact Us</h2>
+               </div>
+               <form id="contactForm">
+                 <div>
+                   <input type="text" id="name" name="name" placeholder="Your Name" required />
+                 </div>
+                 <div>
+                   <input type="text" id="phone" name="phone" placeholder="Phone Number" required />
+                 </div>
+                 <div>
+                   <input type="email" id="email" name="email" placeholder="Email" required />
+                 </div>
+                 <div>
+                   <input type="text" id="message" name="message" class="message-box" placeholder="Message" required />
+                 </div>
+                 <div class="btn_box">
+                   <button type="submit">SEND</button>
+                 </div>
+               </form>
+             </div>
+           </div>
+           <div class="col-md-5 col-lg-6">
+             <div class="subscribe-box">
+               <h3>Subscribe To Our Newsletter</h3>
+               <p>Stay updated with the latest news and updates from Measure International.</p>
+               <form id="subscribeForm">
+                 <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                 <button type="submit">Subscribe</button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <!-- End contact section -->
+
+     <!-- Include EmailJS SDK -->
+     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+     <script type="text/javascript">
+       (function () {
+         emailjs.init("-XgEpNpOP48Xiy40N"); // Replace with your EmailJS User ID
+       })();
+     </script>
+
+     <!-- JavaScript for form submission -->
+     <script>
+       document.getElementById('contactForm').addEventListener('submit', function (event) {
+         event.preventDefault(); // Prevent the default form submission
+
+         // Gather form data
+         const name = document.getElementById('name').value;
+         const phone = document.getElementById('phone').value;
+         const email = document.getElementById('email').value;
+         const message = document.getElementById('message').value;
+
+         // Send form data to EmailJS
+         emailjs.send("service_1u1ely9", "template_qy67vof", {
+             from_name: name,
+             to_name: "Measure International",
+             phone: phone,
+             email: email,
+             message: message
+           })
+           .then(function (response) {
+             alert('Message sent successfully!');
+             document.getElementById('contactForm').reset(); // Reset the contact form
+             console.log('SUCCESS!', response.status, response.text);
+           }, function (error) {
+             alert('Failed to send message.');
+             console.error('FAILED...', error);
+           });
+       });
+
+       document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+         event.preventDefault(); // Prevent the default form submission
+
+         // Gather form data
+         const subscribeEmail = document.getElementById('subscribeEmail').value;
+
+         // Send form data to EmailJS
+         emailjs.send("service_1u1ely9", "template_x9vsald", { // Use the template ID for your subscription
+             subscribeEmail: subscribeEmail
+           })
+           .then(function (response) {
+             alert('Subscription successful!');
+             document.getElementById('subscribeForm').reset(); // Reset the subscription form
+             console.log('SUCCESS!', response.status, response.text);
+           }, function (error) {
+             alert('Failed to subscribe.');
+             console.error('FAILED...', error);
+           });
+       });
+     </script>
+
+
+  <!-- Info section -->
+  <section class="info_section">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4><a href="index.html" class="navbar-brand m-0 p-0"><span>Measure International</span></a></h4>
+            <p class="mb-0" style="text-align: left;">Measure International specializes in transforming workspaces with comprehensive office
+              interior design and turnkey fit-out solutions in Dubai.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail" style="margin: 1cm;">
+            
+            <p class="mb-0" style="text-align: left;">Creating functional, stylish, and comfortable office environments tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Contact Us</h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Dubai, UAE</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call  +971 55 589 1992</span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>info@measureinternational.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Follow Us</h4>
+          <div class="social_box">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          
+            <a href="https://www.linkedin.com/in/mamtashroff"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/971555891992?text=Hello%20Measure%20International" target="_blank"><i
+                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End info section -->
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://html.design/">Pearl White Web</a></p>
+    </div>
+  </footer>
+  <!-- End footer section -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Lightbox Gallery -->
+  <script src="js/ekko-lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

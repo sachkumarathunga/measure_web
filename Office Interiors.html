@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site Metas -->
+  <meta name="keywords"
+    content="office interiors, office furniture, turnkey fit-out solutions, Dubai interior design, Measure International">
+  <meta name="description"
+    content="Measure International specializes in transforming workspaces with comprehensive office interior design and turnkey fit-out solutions in Dubai. Contact us to create your functional, stylish, and comfortable office environment.">
+  <meta name="author" content="Measure International">
+  <link rel="icon" href="images/favicon.png" type="image/gif">
+
+  <title>About Us - Measure International</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- Fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Ekko Lightbox -->
+  <link rel="stylesheet" href="css/ekko-lightbox.css">
+  <!-- Slick slider CSS -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <style>
+    /* Inline CSS for enhanced visuals and animations */
+    .team_member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .team_member img:hover {
+      transform: scale(1.1);
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      transition: transform 0.3s;
+    }
+
+    .carousel-item img:hover {
+      transform: rotate(360deg);
+    }
+
+    .testimonial-box {
+      padding: 20px;
+      background: #3a3f58;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .testimonial-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+
+    .card-slider .card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      margin-right: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card-slider .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about_section .detail-box p {
+      font-size: 1.2em;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .about_section .detail-box h3 {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #3a3f58;
+      border-color: #3a3f58;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #2a2d3d;
+      transform: scale(1.05);
+    }
+
+    .team_section .img-box {
+      overflow: hidden;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .team_section .img-box:hover {
+      transform: scale(1.1);
+    }
+
+    .testimonials_section .heading_container p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+
+    /* 3D Carousel Styles */
+    .carousel3d {
+      perspective: 1000px;
+    }
+
+    .carousel3d-inner {
+      display: flex;
+      transform-style: preserve-3d;
+      transform: rotateY(0deg);
+      transition: transform 1s;
+    }
+
+    .carousel3d-item {
+      flex: 0 0 250px;
+      width: 250px;
+      height: 250px;
+      margin: 0 15px;
+      opacity: 0.8;
+      transition: opacity 0.5s;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel3d-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .carousel3d-item.active {
+      opacity: 1;
+    }
+
+    .carousel3d-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .carousel3d-nav button {
+      background: #3a3f58;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .carousel3d-nav button:hover {
+      background: #2a2d3d;
+    }
+
+    /* Mission & Vision Section Styles */
+    .mission-vision {
+      background-color: #000;
+      color: #fff;
+      padding: 60px 0;
+    }
+
+    .mission-vision .heading_container {
+      margin-bottom: 40px;
+    }
+
+    .mission-vision h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .mission-vision .box {
+      background: #333;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .mission-vision .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .mission-vision .box h5 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .mission-vision .box p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+
+    .slider {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 2rem;
+      background-color: #001f3f;
+      /* Dark blue background */
+      color: white;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .slide p {
+      font-size: 1.2rem;
+      color: white;
+      /* Text color #e45441 */
+    }
+
+    .slide h3 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #e45441;
+      /* Text color #e45441 */
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+ <!-- Header section starts -->
+ <header class="header_section">
+   <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg custom_nav-container">
+       <a class="navbar-brand" href="index.html">
+         <span>Measure International</span>
+       </a>
+       <div class="" id="">
+         <div class="custom_menu-btn">
+           <button onclick="openNav()">
+             <span class="s-1"> </span>
+             <span class="s-2"> </span>
+             <span class="s-3"> </span>
+           </button>
+           <div id="myNav" class="overlay">
+             <div class="overlay-content">
+               <div class="overlay-content2">
+                 <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="gallery.html">Gallery</a>
+                 <a href="service.html">Services</a>
+                 <a href="Fit-Out.html">Fit-Out Process</a>
+                 <a href="Office Interiors.html">Office Interiors</a>
+                 <a href="Office Furniture.html">Office Furniture</a>
+                 <a href="vasthu.html">VASTU Consultancy</a>
+                 <a href="faq.html">FAQ</a>
+                 <a href="Contac.html">Contact</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <!-- End header section -->
+
+
+  <!-- About section -->
+  <section class="about_section layout_padding animated fadeInUp">
+    <div class="container">
+      <div class="heading_container heading_center">
+    
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img2.jpg" alt="About Us" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            
+           
+
+             <div class="heading_container heading_center">
+               <h2>Office Interior Designing</h2>
+             </div>
+            <p style="text-align: justify;">
+              Office interiors are our strength, our forte, and our home ground to work on. We have designed and built
+              spaces of various sizes. At Measure International FZ LLC, we specialize in designing and creating
+              functional yet warm workspaces that enhance productivity and reflect your brand's identity. We understand
+              that a well-designed office space is crucial for the success of any business. It not only boosts employee
+              morale and productivity but also leaves a lasting impression on clients and visitors. Our comprehensive
+              office interior services are tailored to meet the unique needs of each client.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about section -->
+
+
+  <!-- Mission and Vision section -->
+  <section class="mission-vision layout_padding animated fadeInUp" style="background-color:white;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 style="color: #262939;">How We Transform Your Space</h2>
+      </div>
+      <!-- Section 1: Flip Cards -->
+      <section class="container-3d" style="background-color:black;">
+        <div class="heading_container">
+        </div>
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="flip-card-header">Consultation</h4>
+                <img src="images/interior-1.jpg" alt="Consultation">
+              </div>
+              <div class="flip-card-back">
+               
+                <ul>
+                  <li>Listen to Your Requirements</li>
+                  <li>Site Analysis</li>
+                  <li>Initial Ideas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="flip-card-header">Design</h4>
+                <img src="images/interior-2.jpg" alt="Design">
+              </div>
+              <div class="flip-card-back">
+                
+                <ul>
+                  <li>Concept Development</li>
+                  <li>Space Planning</li>
+                  <li>3D Renderings and Visualizations</li>
+                  <li>Material and Finish Selection</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="flip-card-header">Approval</h4>
+                <img src="images/interior-3.jpg" alt="Approval">
+              </div>
+              <div class="flip-card-back">
+               
+                <ul>
+                  <li>Obtain approval from necessary authorities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="flip-card-header">Execution</h4>
+                <img src="images/interior-4.jpg" alt="Execution">
+              </div>
+              <div class="flip-card-back">
+                
+                <ul>
+                  <li>Project Planning and Scheduling</li>
+                  <li>Procurement</li>
+                  <li>Construction and Fit-Out</li>
+                  <li>Quality Control</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h4 class="flip-card-header">Completion</h4>
+                <img src="images/interior-5.jpg" alt="Completion">
+              </div>
+              <div class="flip-card-back">
+               
+                <ul>
+                  <li>Final Touches</li>
+                  <li>Walkthrough and Inspection</li>
+                  <li>Handover and Documentation</li>
+                  <li>Post-Completion Support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- End mission and vision section -->
+
+  <style>
+    /* General 3D container styles */
+    .container-3d {
+      perspective: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .heading_container {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Section 1: Flip Cards */
+    .flip-card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 200px;
+      /* Reduced card size */
+      height: 300px;
+      /* Reduced card size */
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .flip-card-front {
+      background-color: #fff;
+    }
+
+    .flip-card-back {
+      background-color: #f9f9f9;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .flip-card h4 {
+      font-size: 1.25rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .flip-card ul {
+      list-style: none;
+      padding: 0;
+      color: #666;
+    }
+
+    .flip-card-header {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.8);
+      padding: 5px 10px;
+      font-size: 1rem;
+      color: #333;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+;
+    }
+  </style>
+
+  
+
+<!-- Office Interiors Section -->
+<section class="office-interiors-section layout_padding animated fadeInUp"
+  style="background-color: #f8f8f8; padding: 60px 0;">
+  <div class="container">
+    <div class="heading_container" style="align-items: center;">
+      <h2>Office Interiors</h2>
+    </div>
+    <div class="sliding-panels">
+      <div class="panel">
+        <img src="images/design2.jpg" alt="Space Planning and Layout">
+        <div class="panel-content">
+          <h4>Space Planning and Layout</h4>
+          <ul>
+            <li>Effective space planning</li>
+            <li>Optimized layouts</li>
+            <li>Supports operational needs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="images/design.jpg" alt="Interior Design">
+        <div class="panel-content">
+          <h4>Interior Design</h4>
+          <ul>
+            <li>Functional and aesthetically pleasing</li>
+            <li>Reflects your brand identity</li>
+            <li>From conceptualization to final design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="images/service1.jpg" alt="Custom Office Solutions">
+        <div class="panel-content">
+          <h4>Custom Office Solutions</h4>
+          <ul>
+            <li>Bespoke furniture</li>
+            <li>Custom partitions</li>
+            <li>Unique decor elements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Office Interiors Section -->
+<style>
+  .office-interiors-section {
+    padding: 20px 0;
+  }
+
+  .heading_container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .sliding-panels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .panel {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 10px;
+  }
+
+  .panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .panel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+
+  .panel:hover .panel-content {
+    transform: translateY(0);
+  }
+
+  .panel:hover img {
+    transform: scale(1.1);
+  }
+
+  .panel-content h4 {
+    margin-bottom: 10px;
+  }
+
+  .panel-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .panel-content ul li {
+    margin-bottom: 5px;
+  }
+</style>
+
+
+  
+<!-- Include Font Awesome in the head section of your HTML -->
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<!-- Section 3: 3D Accordion -->
+<section class="container-3d">
+  <div class="heading_container" style="align-items: center;">
+    <h2>More Services</h2>
+  </div>
+  <div class="accordion-container">
+    <div class="accordion-item">
+      <h4><i class="fas fa-lightbulb"></i> Lighting Design</h4>
+      <div class="accordion-content">
+        <p>Lighting plays a crucial role in the overall ambiance and functionality of an office space. Our lighting
+          design services ensure that your office is well-lit, creating a comfortable and productive environment. We use
+          a combination of natural light and artificial lighting to create a balanced and energy-efficient lighting
+          plan. Our designs take into account factors such as glare, color temperature, and lighting levels to enhance
+          visual comfort and reduce eye strain.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4><i class="fas fa-th-large"></i> Flooring and Ceiling Solutions</h4>
+      <div class="accordion-content">
+        <p>The right flooring and ceiling solutions can significantly impact the look and feel of your office. We offer
+          a wide range of options to suit different styles and budgets. From durable and stylish flooring materials to
+          innovative ceiling designs, we ensure that every element complements your overall design. Our solutions are
+          not only aesthetically pleasing but also practical, ensuring durability and ease of maintenance.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4><i class="fas fa-volume-mute"></i> Acoustic Solutions</h4>
+      <div class="accordion-content">
+        <p>Noise can be a major distraction in any office environment. Our acoustic solutions are designed to reduce
+          noise levels and create a more focused and productive workspace. We use a variety of sound-absorbing materials
+          and techniques to minimize noise and enhance privacy. Whether it's installing acoustic panels, soundproofing
+          walls, or designing noise-reducing partitions, we tailor our solutions to meet your specific needs.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4><i class="fas fa-sign"></i> Branding and Signage</h4>
+      <div class="accordion-content">
+        <p>Your office is a reflection of your brand, and effective branding and signage can help reinforce your
+          corporate identity. We offer a range of branding and signage solutions that integrate seamlessly with your
+          office design. From custom logos and wall graphics to wayfinding signage, we ensure that your brand is
+          prominently displayed throughout your workspace. Our designs are not only visually appealing but also
+          functional, helping visitors navigate your office with ease.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Section 3: 3D Accordion */
+  .accordion-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .accordion-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: left;
+    transition: transform 0.5s;
+    transform: perspective(1000px) rotateX(0deg);
+  }
+
+  .accordion-item:hover {
+    transform: perspective(1000px) rotateX(10deg);
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+
+  .accordion-item.active {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+</style>
+
+
+<script>
+  // Accordion functionality
+  document.querySelectorAll('.accordion-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+<style>
+  .accordion-item h4 {
+    display: flex;
+    align-items: center;
+  }
+
+  .accordion-item h4 i {
+    margin-right: 10px;
+  }
+</style>
+
+
+  
+
+  
+  <!-- Info section -->
+  <section class="info_section">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4><a href="index.html" class="navbar-brand m-0 p-0"><span>Measure International</span></a></h4>
+            <p class="mb-0" style="text-align: left;">Measure International specializes in transforming workspaces with
+              comprehensive office
+              interior design and turnkey fit-out solutions in Dubai.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>Company</h4>
+            <p class="mb-0" style="text-align: left;">Creating functional, stylish, and comfortable office environments
+              tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Contact Us</h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Dubai, UAE</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +971 55 589 1992</span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>info@measureinternational.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Follow Us</h4>
+          <div class="social_box">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+            <a href="https://www.linkedin.com/in/mamtashroff"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/971555891992?text=Hello%20Measure%20International" target="_blank"><i
+                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End info section -->
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://html.design/">Pearl White Web</a>
+      </p>
+    </div>
+  </footer>
+  <!-- End footer section -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Ekko Lightbox JS -->
+  <script src="js/ekko-lightbox.min.js"></script>
+  <!-- Slick slider JS -->
+  <script src="js/slick.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+  <script>
+    // 3D Carousel JavaScript
+    const carousel3d = document.getElementById('carousel3d');
+    let angle = 0;
+    const items = document.querySelectorAll('.carousel3d-item');
+    const itemCount = items.length;
+    const itemAngle = 360 / itemCount;
+
+    document.getElementById('next').addEventListener('click', () => {
+      angle -= itemAngle;
+      updateCarousel();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      angle += itemAngle;
+      updateCarousel();
+    });
+
+    function updateCarousel() {
+      carousel3d.style.transform = `rotateY(${angle}deg)`;
+      items.forEach((item, index) => {
+        const itemAngle = angle + (index * itemAngle);
+        item.style.transform = `rotateY(${itemAngle}deg) translateZ(250px)`;
+      });
+    }
+
+    // Initialize carousel
+    updateCarousel();
+  </script>
+
+</body>
+
+</html>

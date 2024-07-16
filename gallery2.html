@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+  <title>Shapel</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- lightbox Gallery-->
+  <link rel="stylesheet" href="css/ekko-lightbox.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+ <!-- Header section starts -->
+ <header class="header_section">
+   <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg custom_nav-container">
+       <a class="navbar-brand" href="index.html">
+         <span>Measure International</span>
+       </a>
+       <div class="" id="">
+         <div class="custom_menu-btn">
+           <button onclick="openNav()">
+             <span class="s-1"> </span>
+             <span class="s-2"> </span>
+             <span class="s-3"> </span>
+           </button>
+           <div id="myNav" class="overlay">
+             <div class="overlay-content">
+               <a href="index.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="service.html">Services</a>
+               <a href="Fit-Out.html">Fit-Out Process</a>
+               <a href="Office Interiors.html">Office Interiors</a>
+               <a href="Office Furniture.html">Office Furniture</a>
+               <a href="vasthu.html">VASTU Consultancy</a>
+               <a href="faq.html">FAQ</a>
+               <a href="Contac.html">Contact</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <!-- End header section -->
+
+
+  <!-- gallery section -->
+<!-- gallery section -->
+<div class="gallery-section layout-padding">
+  <div class="container-fluid">
+    <div class="heading-container heading-center">
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/1.jpg" alt="">
+        <a href="images/1.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <img src="images/2.jpg" alt="">
+        <a href="images/2.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <img src="images/3.jpg" alt="">
+        <a href="images/3.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <img src="images/4.jpg" alt="">
+        <a href="images/4.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <img src="images/5.jpg" alt="">
+        <a href="images/5.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="gallery-item">
+        <img src="images/6.jpg" alt="">
+        <a href="images/6.jpg" class="gallery-link" data-toggle="lightbox" data-gallery="gallery">
+          <i class="fa fa-search-plus" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="btn-box">
+      <a href="">View All</a>
+    </div>
+  </div>
+</div>
+<!-- end gallery section -->
+
+
+<!-- end gallery section -->
+
+
+  <style>
+   /* General Styling */
+   .gallery-section {
+   padding: 60px 0;
+   }
+
+   .heading-container {
+   margin-bottom: 40px;
+   }
+
+   /* Gallery Grid Styling */
+   .gallery-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   gap: 15px;
+   }
+
+   .gallery-item {
+   position: relative;
+   overflow: hidden;
+   height: 300px;
+   transition: transform 0.6s ease, box-shadow 0.6s ease;
+   transform-style: preserve-3d;
+   }
+
+   .gallery-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.6s ease;
+   }
+
+   .gallery-item:hover {
+   transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+   }
+
+   .gallery-item:hover img {
+   transform: scale(1.1);
+   }
+
+   .gallery-link {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.5);
+   opacity: 0;
+   color: white;
+   transition: transform 0.6s ease, opacity 0.6s ease;
+   }
+
+   .gallery-item:hover .gallery-link {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+   }
+
+   .fa-search-plus {
+   font-size: 30px;
+   }
+
+   /* Button Styling */
+   .btn-box {
+   text-align: center;
+   margin-top: 20px;
+   }
+
+   .btn-box a {
+   background: #000;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   transition: background 0.3s, color 0.3s;
+   }
+
+   .btn-box a:hover {
+   background: #fff;
+   color: #000;
+   }
+
+  </style>
+  <!-- end gallery section -->
+
+  <!-- gallery section -->
+ <!-- gallery section -->
+ <div class="gallery-section layout-padding">
+   <div class="container-fluid">
+     <div class="heading-container heading-center">
+       <h2>3D Cube Gallery</h2>
+     </div>
+     <div class="cube-container">
+       <div class="cube">
+         <div class="face front">
+           <img src="images/1.jpg" alt="Image 1">
+         </div>
+         <div class="face back">
+           <img src="images/2.jpg" alt="Image 2">
+         </div>
+         <div class="face left">
+           <img src="images/3.jpg" alt="Image 3">
+         </div>
+         <div class="face right">
+           <img src="images/4.jpg" alt="Image 4">
+         </div>
+         <div class="face top">
+           <img src="images/5.jpg" alt="Image 5">
+         </div>
+         <div class="face bottom">
+           <img src="images/6.jpg" alt="Image 6">
+         </div>
+       </div>
+     </div>
+     <div class="btn-box">
+       <a href="">View All</a>
+     </div>
+   </div>
+ </div>
+ <!-- end gallery section -->
+
+  <style>
+/* General Styling */
+.gallery-section {
+padding: 60px 0;
+}
+
+.heading-container {
+margin-bottom: 40px;
+text-align: center;
+}
+
+.cube-container {
+perspective: 2000px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px; /* Adjust height to make the cube more prominent */
+}
+
+.cube {
+position: relative;
+width: 400px;
+height: 400px;
+transform-style: preserve-3d;
+transform: rotateX(-20deg) rotateY(20deg);
+animation: rotateCube 30s infinite linear; /* Slower rotation */
+}
+
+.face {
+position: absolute;
+width: 400px;
+height: 400px;
+backface-visibility: hidden;
+border: 2px solid #eee; /* Subtle border for clarity */
+}
+
+.front { transform: rotateY(0deg) translateZ(200px); }
+.back { transform: rotateY(180deg) translateZ(200px); }
+.left { transform: rotateY(-90deg) translateZ(200px); }
+.right { transform: rotateY(90deg) translateZ(200px); }
+.top { transform: rotateX(90deg) translateZ(200px); }
+.bottom { transform: rotateX(-90deg) translateZ(200px); }
+
+.face img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Cube Rotation Animation */
+@keyframes rotateCube {
+from { transform: rotateX(-20deg) rotateY(0deg); }
+to { transform: rotateX(-20deg) rotateY(360deg); }
+}
+
+/* Button Styling */
+.btn-box {
+text-align: center;
+margin-top: 20px;
+}
+
+.btn-box a {
+background: #000;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+text-transform: uppercase;
+transition: background 0.3s, color 0.3s;
+}
+
+.btn-box a:hover {
+background: #fff;
+color: #000;
+}
+
+
+</style>
+  <!-- end gallery section -->
+
+
+ 
+
+  <!-- gallery section2 -->
+  <section class="gallery_section layout_padding animated fadeInUp">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Gallery</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 col-md-6 px-0">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img class="carousel__image" src="images/work-1.jpg" alt="Interior Design Work 1">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-2.jpg" alt="Interior Design Work 2">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-3.jpg" alt="Interior Design Work 3">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-4.jpg" alt="Interior Design Work 4">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-5.jpg" alt="Interior Design Work 5">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-6.jpg" alt="Interior Design Work 6">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-7.jpg" alt="Interior Design Work 7">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-8.jpg" alt="Interior Design Work 8">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-9.jpg" alt="Interior Design Work 9">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-10.jpg" alt="Interior Design Work 10">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-11.jpg" alt="Interior Design Work 11">
+            </li>
+            <li class="carousel__slide">
+              <img class="carousel__image" src="images/work-12.jpg" alt="Interior Design Work 12">
+            </li>
+          </ul>
+        </div>
+        <button class="carousel__button carousel__button--left">&#10094;</button>
+        <button class="carousel__button carousel__button--right">&#10095;</button>
+      </div>
+    </div>
+  </section>
+<style>
+  .gallery_section {
+    padding: 0.5rem 0;
+    /* Further reduce the padding */
+  }
+
+  .heading_container {
+    margin-bottom: 0.5rem;
+    /* Reduce the margin */
+  }
+
+  .heading_container h2 {
+    font-size: 2rem;
+    color: #001f3f;
+    /* Dark blue */
+  }
+
+  .carousel {
+    position: relative;
+    width: 90%;
+    /* Increase the width */
+    max-width: 1200px;
+    /* Increase the max-width */
+    margin: 0 auto;
+    perspective: 1000px;
+    /* Increase the perspective */
+  }
+
+  .carousel__track-container {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) translateZ(-1200px);
+    /* Adjust the translateZ value */
+  }
+
+  .carousel__track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .carousel__slide {
+    min-width: 50%;
+    transition: transform 0.8s ease-in-out;
+    transform-origin: center center -600px;
+    /* Adjust the transform-origin value */
+  }
+
+  .carousel__image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .carousel__button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel__button--left {
+    left: 10px;
+  }
+
+  .carousel__button--right {
+    right: 10px;
+  }
+
+  .carousel__slide.current-slide {
+    transform: translateZ(0) scale(1.2);
+    /* Increase the scale value */
+  }
+
+  .carousel__slide {
+    transform: translateZ(-300px) scale(0.9);
+    /* Adjust the translateZ and scale values */
+  }
+</style>
+
+
+  <script>
+    const track = document.querySelector('.carousel__track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel__button--right');
+    const prevButton = document.querySelector('.carousel__button--left');
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    let currentIndex = 0;
+
+    const setSlidePosition = (slide, index) => {
+      slide.style.left = slideWidth * index + 'px';
+    };
+
+    slides.forEach(setSlidePosition);
+
+    const moveToSlide = (track, currentSlide, targetSlide) => {
+      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+      currentSlide.classList.remove('current-slide');
+      targetSlide.classList.add('current-slide');
+    };
+
+    const updateCurrentIndex = (index) => {
+      currentIndex = (index + slides.length) % slides.length;
+    };
+
+    const nextSlide = () => {
+      const currentSlide = track.querySelector('.current-slide');
+      const nextSlide = currentSlide.nextElementSibling || slides[0];
+      moveToSlide(track, currentSlide, nextSlide);
+      updateCurrentIndex(currentIndex + 1);
+    };
+
+    const prevSlide = () => {
+      const currentSlide = track.querySelector('.current-slide');
+      const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+      moveToSlide(track, currentSlide, prevSlide);
+      updateCurrentIndex(currentIndex - 1);
+    };
+
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  </script>
+
+  <!-- end gallery section2 -->
+
+
+    <div class="gallery_section layout_padding">
+      <div class="container-fluid">
+        <div class="heading_container heading_center">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+
+        <div class="gallery_section layout_padding">
+          <div class="container-fluid">
+            <div class="heading_container heading_center">
+              <h2></h2>
+            </div>
+          </div>
+        </div>
+        
+
+
+  <!-- info section -->
+  <section class="info_section innerpage_info_section">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              <a href="index.html" class="navbar-brand m-0 p-0">
+                <span>Shapel</span>
+              </a>
+            </h4>
+            <p class="mb-0">
+              Asperiores at, error, delectus aut voluptatem provident cum quam magni necessitatibus molestias eveniet
+              reprehenderit maiores voluptate.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>Company</h4>
+            <p class="mb-0">
+              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Contact Us</h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +01 1234567890</span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>demo@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Follow Us</h4>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- lightbox Gallery-->
+  <script src="js/ekko-lightbox.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

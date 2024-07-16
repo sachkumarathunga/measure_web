@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Site Metas -->
+  <meta name="keywords"
+    content="office interiors, office furniture, turnkey fit-out solutions, Dubai interior design, Measure International">
+  <meta name="description"
+    content="Measure International specializes in transforming workspaces with comprehensive office interior design and turnkey fit-out solutions in Dubai. Contact us to create your functional, stylish, and comfortable office environment.">
+  <meta name="author" content="Measure International">
+  <link rel="icon" href="images/favicon.png" type="image/gif">
+  <title>Measure International</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!-- Fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Lightbox Gallery-->
+  <link rel="stylesheet" href="css/ekko-lightbox.css">
+
+  <!-- Font Awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .faq-section {
+      background: #f4f4f9;
+      padding: 60px 0;
+    }
+
+    .faq-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .faq-header h2 {
+      font-size: 3rem;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .accordion-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .accordion-item {
+      background-color: #fff;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      cursor: pointer;
+      padding: 20px 30px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+      transform: perspective(1000px) rotateX(0deg);
+    }
+
+    .accordion-item:hover {
+      transform: perspective(1000px) rotateX(5deg);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-top: 2px solid #e0e0e0;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.active {
+      transform: perspective(1000px) rotateX(0deg);
+    }
+
+    .accordion-item h4 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .accordion-item h4 .icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      transform: translateY(-10px);
+      transition: transform 1s ease-in-out;
+    }
+
+    .accordion-item.active h4 .icon {
+      transform: translateY(0);
+    }
+
+    .accordion-content p,
+    .accordion-content ul {
+      font-size: 1rem;
+      color: #666;
+      margin: 0;
+      padding: 0;
+    }
+
+    .accordion-content ul {
+      padding-left: 20px;
+    }
+
+    .accordion-content li {
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+    }
+
+    .accordion-content li:before {
+      content: "\f00c";
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 0;
+      color: #e45441;
+    }
+
+    @media (max-width: 768px) {
+      .accordion-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>Measure International</span>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-content2">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="service.html">Services</a>
+                  <a href="Fit-Out.html">Fit-Out Process</a>
+                  <a href="Office Interiors.html">Office Interiors</a>
+                  <a href="Office Furniture.html">Office Furniture</a>
+                  <a href="vasthu.html">VASTU Consultancy</a>
+                  <a href="faq.html">FAQ</a>
+                  <a href="Contac.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End header section -->
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion-container">
+        <div class="accordion-item">
+          <h4><i class="fa fa-question-circle icon"></i>Why Should You Work with Us?</h4>
+          <div class="accordion-content">
+            <ul>
+              <li>High-Quality Products: Our furniture is made from durable materials and crafted with precision,
+                ensuring longevity and customer satisfaction.</li>
+              <li>Unique and Stylish Designs: We offer a wide range of ergonomic designs that blend style and
+                functionality.</li>
+              <li>Attention to Detail: Every piece is meticulously designed and crafted, paying attention to even the
+                smallest details.</li>
+              <li>Comfort and Functionality: Our furniture is designed with ergonomics in mind, providing optimal
+                comfort and usability.</li>
+              <li>Excellent Customer Service: Our knowledgeable and friendly staff are available to assist you
+                throughout the purchasing process.</li>
+              <li>Competitive Pricing: We offer high-quality furniture at competitive prices, providing excellent value
+                for your investment.</li>
+              <li>Sustainable and Ethical Practices: We use environmentally friendly materials and production
+                processes, and prioritize fair labor practices.</li>
+              <li>Delivery and Assembly Services: We offer reliable delivery and assembly services to ensure your
+                furniture is set up correctly.</li>
+              <li>Positive Customer Reviews and Reputation: Our satisfied customers and positive reviews speak to our
+                commitment to quality and customer satisfaction.</li>
+            </ul>
+          </div>
+        </div>
+   <div class="accordion-item">
+     <h4><i class="fa fa-lightbulb-o icon"></i>How do I get started with a project?</h4>
+     <div class="accordion-content">
+       <p>To get started, you can contact us via phone or email to schedule an initial consultation. During this
+         meeting, we'll discuss your requirements and also visit the site if that is possible. This will help us
+         understand your vision and provide a customized proposal for your project.</p>
+       <p>
+         <a href="https://wa.me/971555891992?text=Hello%20Measure%20International" target="_blank">
+           <i class="fa fa-whatsapp" style="font-size:24px;color:green;"></i> Contact us on WhatsApp
+         </a>
+       </p>
+     </div>
+   </div>
+
+
+
+
+
+        <div class="accordion-item">
+          <h4><i class="fa fa-clock-o icon"></i>What is the typical timeline for a project?</h4>
+          <div class="accordion-content">
+            <p>The timeline for a project varies depending on the scope but the same can be discussed and clarified in
+              the initially meeting. After the initial consultation and draft design, we provide a commercial proposal
+              to move forward.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-check-circle icon"></i>How do you ensure the quality of your work?</h4>
+          <div class="accordion-content">
+            <p>We are committed to delivering high-quality work. Our team uses good quality and approved materials and
+              employs best practices in design and execution. We have regular site visits, meetings, and inspections to
+              keep things at a check.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-usd icon"></i>Can you work within my budget?</h4>
+          <div class="accordion-content">
+            <p>Absolutely. We understand the importance of budget management and work closely with our clients to
+              provide cost-effective solutions without compromising on quality. We offer competitive pricing and
+              transparent cost estimates to help you make informed decisions.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-cogs icon"></i>What is your design process?</h4>
+          <div class="accordion-content">
+            <ul>
+              <li>Consultation: Understanding your needs and vision.</li>
+              <li>Concept Development: Creating initial design or a draft layout.</li>
+              <li>Design Approval: Reviewing and finalizing the design with you.</li>
+              <li>Detailed Design: We prepare further designs based on the agreed scope for your approval.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-building icon"></i>Do you handle commercial projects?</h4>
+          <div class="accordion-content">
+            <p>Yes, we specialize in commercial projects. Whether you need office interiors, retail spaces, or
+              healthcare design, we have the expertise to deliver exceptional results tailored to your business needs.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-briefcase icon"></i>How can I see examples of your work?</h4>
+          <div class="accordion-content">
+            <p>You can view examples of our previous projects in the portfolio which you can request here by WhatsApp.
+              We showcase a variety of projects to demonstrate our versatility and expertise in different design styles
+              and spaces.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-refresh icon"></i>What if I need changes during the project?</h4>
+          <div class="accordion-content">
+            <p>We understand that changes may be necessary during a project. We maintain open communication with our
+              clients and are flexible in accommodating variations. Any changes will be discussed and agreed upon
+              before implementation to ensure they align with your vision and budget.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-tasks icon"></i>How do you handle project management?</h4>
+          <div class="accordion-content">
+            <p>Our project management approach ensures that every aspect of the project is coordinated and executed
+              efficiently. We assign a dedicated site team to oversee the process, communicate with clients, manage
+              timelines, and ensure that all work is completed to the highest standards.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-leaf icon"></i>What are your sustainable practices?</h4>
+          <div class="accordion-content">
+            <p>We are committed to sustainability and use environmentally friendly materials and production processes.
+              We prioritize energy-efficient solutions, responsible sourcing, and waste reduction in all our projects
+              to minimize our environmental impact.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-home icon"></i>What can I expect during a VASTU consultation, and how can it benefit my
+            home or office?</h4>
+          <div class="accordion-content">
+            <p>During a VASTU consultation, an expert like Ravi Bhai Joshi will assess the spatial and architectural
+              design of your home or office to ensure it aligns with Vastu principles, which aim to harmonize the
+              environment with natural forces. This process typically involves evaluating the placement of rooms,
+              furniture, and entrances, and suggesting modifications to enhance positive energy flow and well-being.
+              Benefits include improved health, prosperity, and overall harmony in your living or working space.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4><i class="fa fa-envelope icon"></i>How do I contact you for more information or to start a project?</h4>
+          <div class="accordion-content">
+            <p>You can contact us via phone or email to schedule an initial consultation. We look forward to working
+              with you!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Accordion functionality
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <!-- Contact section -->
+  <section class="contact_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-6">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>Contact Us</h2>
+            </div>
+            <form id="contactForm">
+              <div>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required />
+              </div>
+              <div>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+              </div>
+              <div>
+                <input type="text" id="message" name="message" class="message-box" placeholder="Message" required />
+              </div>
+              <div class="btn_box">
+                <button type="submit">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6">
+          <div class="subscribe-box">
+            <h3>Subscribe To Our Newsletter</h3>
+            <p>Stay updated with the latest news and updates from Measure International.</p>
+            <form id="subscribeForm">
+              <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact section -->
+
+  <!-- Include EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("-XgEpNpOP48Xiy40N"); // Replace with your EmailJS User ID
+    })();
+  </script>
+
+  <!-- JavaScript for form submission -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Gather form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Send form data to EmailJS
+      emailjs.send("service_1u1ely9", "template_qy67vof", {
+          from_name: name,
+          to_name: "Measure International",
+          phone: phone,
+          email: email,
+          message: message
+        })
+        .then(function (response) {
+          alert('Message sent successfully!');
+          document.getElementById('contactForm').reset(); // Reset the contact form
+          console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          alert('Failed to send message.');
+          console.error('FAILED...', error);
+        });
+    });
+
+    document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Gather form data
+      const subscribeEmail = document.getElementById('subscribeEmail').value;
+
+      // Send form data to EmailJS
+      emailjs.send("service_1u1ely9", "template_x9vsald", { // Use the template ID for your subscription
+          subscribeEmail: subscribeEmail
+        })
+        .then(function (response) {
+          alert('Subscription successful!');
+          document.getElementById('subscribeForm').reset(); // Reset the subscription form
+          console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          alert('Failed to subscribe.');
+          console.error('FAILED...', error);
+        });
+    });
+  </script>
+
+  <!-- Info section -->
+  <section class="info_section">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4><a href="index.html" class="navbar-brand m-0 p-0"><span>Measure International</span></a></h4>
+            <p class="mb-0" style="text-align: left;">Measure International specializes in transforming workspaces with
+              comprehensive office
+              interior design and turnkey fit-out solutions in Dubai.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>Company</h4>
+            <p class="mb-0" style="text-align: left;">Creating functional, stylish, and comfortable office environments
+              tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Contact Us</h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Dubai, UAE</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call +971 55 589 1992</span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>info@measureinternational.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>Follow Us</h4>
+          <div class="social_box">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+            <a href="https://www.linkedin.com/in/mamtashroff"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/971555891992?text=Hello%20Measure%20International" target="_blank"><i
+                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End info section -->
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://html.design/">Pearl White Web</a>
+      </p>
+    </div>
+  </footer>
+  <!-- End footer section -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Lightbox Gallery -->
+  <script src="js/ekko-lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

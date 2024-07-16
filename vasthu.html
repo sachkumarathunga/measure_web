@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+    <title>Measure International - Services</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+    <!-- lightbox Gallery-->
+    <link rel="stylesheet" href="css/ekko-lightbox.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .hero-section {
+            background: url('images/vastu-bg.jpg') center center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content {
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        .about-section,
+        .what-is-vastu-section,
+        .why-hire-us-section {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .about-section .content,
+        .what-is-vastu-section .content,
+        .why-hire-us-section .content {
+            text-align: left;
+        }
+
+        .about-section .content h2,
+        .what-is-vastu-section .content h2,
+        .why-hire-us-section .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-section .content p,
+        .what-is-vastu-section .content p,
+        .why-hire-us-section .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .about-section .img-container,
+        .what-is-vastu-section .img-container,
+        .why-hire-us-section .img-container {
+            text-align: center;
+        }
+
+        .about-section img,
+        .what-is-vastu-section img,
+        .why-hire-us-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .services-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .services-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(25% - 20px);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #5cb85c;
+        }
+
+        .service-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .contact_section {
+            padding: 60px 0;
+            background: #333;
+            color: white;
+        }
+
+        .contact_section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .contact_section .form_container {
+            background: #444;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact_section .form_container .heading_container h2 {
+            color: white;
+        }
+
+        .contact_section .form_container form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact_section .form_container form .form-group input,
+        .contact_section .form_container form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact_section .form_container form button {
+            background: #e45441;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact_section .form_container form button:hover {
+            background: #d9433a;
+        }
+
+        .subscribe-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .subscribe-box h3 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-box p {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-box form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscribe-box form input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+        }
+
+        .subscribe-box form button {
+            background: #e45441;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 5px 5px 0;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .subscribe-box form button:hover {
+            background: #d9433a;
+        }
+
+
+        .services-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .services-slider .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .services-slider .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .services-slider .slide img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .services-slider .slide h4 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #ffffff;
+        }
+
+        .services-slider .slide p {
+            padding: 0 15px 15px;
+               color: #ddd;
+            line-height: 1.6;
+        }
+
+        .services-slider .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .services-slider .controls button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .services-slider .controls button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .contact_section {
+            padding: 60px 0;
+            background: #333;
+            color: white;
+        }
+
+        .contact_section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .contact_section .form_container {
+            background: #444;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact_section .form_container .heading_container h2 {
+            color: white;
+        }
+
+        .contact_section .form_container form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact_section .form_container form .form-group input,
+        .contact_section .form_container form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact_section .form_container form button {
+            background: #e45441;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact_section .form_container form button:hover {
+            background: #d9433a;
+        }
+
+        .subscribe-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .subscribe-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-box p {
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-box form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscribe-box form input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 300px;
+        }
+
+        .subscribe-box form button {
+            background: #e45441;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 5px 5px 0;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .subscribe-box form button:hover {
+            background: #d9433a;
+        }
+
+        .services-section {
+     position: relative;
+     overflow: hidden;
+     background: #f4f4f9;
+     padding: 60px 0;
+   }
+
+   .services-section h2 {
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+   }
+
+   .services-slider {
+     position: relative;
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+
+   .slides {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+   }
+
+   .slide {
+     min-width: 100%;
+     height: 400px;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .description-box {
+     background: rgba(255, 255, 255, 0.8);
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+     max-width: 80%;
+     transition: transform 0.3s, box-shadow 0.3s;
+   }
+
+   .description-box:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+
+   .description-box h4 {
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+   }
+
+   .description-box p {
+     font-size: 1rem;
+     color: #333;
+   }
+
+   .controls {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+     display: flex;
+     justify-content: space-between;
+     transform: translateY(-50%);
+   }
+
+   .controls button {
+     background: rgba(0, 0, 0, 0.5);
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 50%;
+     transition: background 0.3s;
+   }
+
+   .controls button:hover {
+     background: rgba(0, 0, 0, 0.8);
+   }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Header section starts -->
+   <header class="header_section">
+       <div class="container-fluid">
+           <nav class="navbar navbar-expand-lg custom_nav-container">
+               <a class="navbar-brand" href="index.html">
+                   <span>Measure International</span>
+               </a>
+               <div class="" id="">
+                   <div class="custom_menu-btn">
+                       <button onclick="openNav()">
+                           <span class="s-1"> </span>
+                           <span class="s-2"> </span>
+                           <span class="s-3"> </span>
+                       </button>
+                       <div id="myNav" class="overlay">
+                           <div class="overlay-content">
+                               <div class="overlay-content2">
+                                   <a href="index.html">Home</a>
+                                   <a href="about.html">About</a>
+                                   <a href="gallery.html">Gallery</a>
+                                   <a href="service.html">Services</a>
+                                   <a href="Fit-Out.html">Fit-Out Process</a>
+                                   <a href="Office Interiors.html">Office Interiors</a>
+                                   <a href="Office Furniture.html">Office Furniture</a>
+                                   <a href="vasthu.html">VASTU Consultancy</a>
+                                   <a href="faq.html">FAQ</a>
+                                   <a href="Contac.html">Contact</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </nav>
+       </div>
+   </header>
+   <!-- End header section -->
+
+
+<!-- Hero Section -->
+<section class="hero-section" style="background-image: url('images/vasthu_.jpg');">
+    <div class="hero-content">
+        <h1>VASTU Consultancy by Ravi Bhai Joshi</h1>
+        <div class="description-box">
+            <p>Connect with a leading astrologer and VASTU expert for advice. Bringing spiritual knowledge and VASTU
+                expertise globally.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .description-box {
+        background: rgba(0, 0, 0, 0.6);
+        /* Black background with 60% opacity */
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .description-box p {
+        font-size: 1.2rem;
+        color: #fff;
+        /* White text color */
+    }
+</style>
+
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 content" style="margin-left: -2cm;">
+          
+          <div class="heading_container heading_center" style="margin-left: -2cm;">
+              <h2>About Ravi Bhai Joshi</h2>
+          </div>
+          <p style="text-align: justify;">If you are seeking to connect with a leading astrologer and VASTU expert for advice, you have come to the
+            right place. Ravi Bhai Joshi is renowned for his extensive knowledge in astrology and spiritual science,
+            which he has shared on prominent global platforms. His expertise in VASTU and astrology extends beyond
+            India, reaching a broad international audience.</p>
+          <p>Ravi Bhai Joshi has rendered his services across various countries, including the USA, Canada, Dubai, Abu
+            Dhabi, and Germany, among others. Today, he continues to offer his astrological and VASTU consultations
+            globally, maintaining a seamless service presence in multiple nations.</p>
+        </div>
+        <div class="col-md-6 img-container">
+          <img src="images/ravi-bhai-joshi.jpg" alt="Ravi Bhai Joshi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+      <div class="container">
+          
+           <div class="heading_container heading_center">
+               <h2>Our Services</h2>
+           </div>
+          <div class="services-slider">
+              <div class="slides">
+                  <div class="slide" style="background-image: url('images/vastu-service-1.jpg');">
+                      <div class="description-box">
+                          <h4>Home Vastu Consultation</h4>
+                          <p>Home Vastu provides you with specific guidelines that can be applied to any home
+                              environment. As a
+                              result, it increases your feelings of comfort.</p>
+                      </div>
+                  </div>
+                  <div class="slide" style="background-image: url('images/vastu-service-2.jpg');">
+                      <div class="description-box">
+                          <h4>Office Vastu Consultation</h4>
+                          <p>Many companies have experienced a spontaneous improvement in their prosperity by making
+                              their location
+                              Vastu friendly.</p>
+                      </div>
+                  </div>
+                  <div class="slide" style="background-image: url('images/vastu-service-3.jpg');">
+                      <div class="description-box">
+                          <h4>Industrial Vastu Consultation</h4>
+                          <p>An industrial Vastu consultation is designed to improve the premise’s vibrations to support
+                              the key
+                              functions of the business.</p>
+                      </div>
+                  </div>
+                  <div class="slide" style="background-image: url('images/vastu-service-4.jpg');">
+                      <div class="description-box">
+                          <h4>Astrological Consultation</h4>
+                          <p>Get personalized astrological consultations from Ravi Bhai Joshi, tailored to your unique
+                              needs and
+                              circumstances.</p>
+                      </div>
+                  </div>
+                  <div class="slide" style="background-image: url('images/vastu-service-5.jpg');">
+                      <div class="description-box">
+                          <h4>VASTU Consultation</h4>
+                          <p>Optimize your living or working space with expert VASTU consultations, ensuring harmony and
+                              prosperity.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="slide" style="background-image: url('images/vastu-service-6.jpg');">
+                      <div class="description-box">
+                          <h4>Spiritual Guidance</h4>
+                          <p>Receive spiritual guidance and advice to help you navigate life's challenges and find inner
+                              peace.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="controls">
+                  <button class="prev" onclick="slide('prev')">❮</button>
+                  <button class="next" onclick="slide('next')">❯</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Why Hire Us Section -->
+  <section class="why-hire-us-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 img-container">
+                  <img src="images/why.jpg" alt="Why Hire Us">
+              </div>
+              <div class="col-md-6 content">
+                  
+                     <div class="heading_container heading_center">
+                         <h2>Why Hire Us?</h2>
+                     </div>
+                  <p style="text-align: justify;"><strong>Vastu Experience:</strong> Providing Vastu services since
+                      1991- Experience of more than 30+
+                      years
+                      with clients all over the world.</p>
+                  <p style="text-align: justify;"><strong>Expert Team:</strong> A team of experts who looks after Vastu
+                      designs, research, marketing,
+                      IT, and
+                      backup service.</p>
+                  <p style="text-align: justify;"><strong>Creative and Professional:</strong> High standard of
+                      professional services with a creative
+                      approach, value-added services.</p>
+                  <p style="text-align: justify;"><strong>Practical Solutions:</strong> Very simple, easy to implement,
+                      and cost-effective Vastu
+                      solutions.
+                  </p>
+                  <p style="text-align: justify;"><strong>Authentic Vastu:</strong> We strictly follow five basic Vastu
+                      element rules in any layout
+                      which is
+                      the key factor in any Vastu design.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+   <!-- Contact section -->
+   <section class="contact_section" style="background-color: #f4f4f9;">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-7 col-lg-6">
+                   <div class="form_container">
+                       <div class="heading_container">
+                           <h2>Contact Us</h2>
+                       </div>
+                       <form id="contactForm">
+                           <div>
+                               <input type="text" id="name" name="name" placeholder="Your Name" required />
+                           </div>
+                           <div>
+                               <input type="text" id="phone" name="phone" placeholder="Phone Number" required />
+                           </div>
+                           <div>
+                               <input type="email" id="email" name="email" placeholder="Email" required />
+                           </div>
+                           <div>
+                               <input type="text" id="message" name="message" class="message-box" placeholder="Message"
+                                   required />
+                           </div>
+                           <div class="btn_box">
+                               <button type="submit">SEND</button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+               <div class="col-md-5 col-lg-6">
+                   <div class="subscribe-box">
+                       <h3 style="color: #333;">Subscribe To Our Newsletter</h3>
+                       <p>Stay updated with the latest news and updates from Measure International.</p>
+                       <form id="subscribeForm">
+                           <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                           <button type="submit">Subscribe</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!-- End contact section -->
+
+   <!-- Include EmailJS SDK -->
+   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+   <script type="text/javascript">
+       (function () {
+           emailjs.init("-XgEpNpOP48Xiy40N"); // Replace with your EmailJS User ID
+       })();
+   </script>
+
+   <!-- JavaScript for form submission -->
+   <script>
+       document.getElementById('contactForm').addEventListener('submit', function (event) {
+           event.preventDefault(); // Prevent the default form submission
+
+           // Gather form data
+           const name = document.getElementById('name').value;
+           const phone = document.getElementById('phone').value;
+           const email = document.getElementById('email').value;
+           const message = document.getElementById('message').value;
+
+           // Send form data to EmailJS
+           emailjs.send("service_1u1ely9", "template_qy67vof", {
+                   from_name: name,
+                   to_name: "Measure International",
+                   phone: phone,
+                   email: email,
+                   message: message
+               })
+               .then(function (response) {
+                   alert('Message sent successfully!');
+                   document.getElementById('contactForm').reset(); // Reset the contact form
+                   console.log('SUCCESS!', response.status, response.text);
+               }, function (error) {
+                   alert('Failed to send message.');
+                   console.error('FAILED...', error);
+               });
+       });
+
+       document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+           event.preventDefault(); // Prevent the default form submission
+
+           // Gather form data
+           const subscribeEmail = document.getElementById('subscribeEmail').value;
+
+           // Send form data to EmailJS
+           emailjs.send("service_1u1ely9", "template_x9vsald", { // Use the template ID for your subscription
+                   subscribeEmail: subscribeEmail
+               })
+               .then(function (response) {
+                   alert('Subscription successful!');
+                   document.getElementById('subscribeForm').reset(); // Reset the subscription form
+                   console.log('SUCCESS!', response.status, response.text);
+               }, function (error) {
+                   alert('Failed to subscribe.');
+                   console.error('FAILED...', error);
+               });
+       });
+   </script>
+
+
+    <!-- Info section -->
+    <section class="info_section">
+        <div class="container">
+            <div class="row info_main_row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info_insta">
+                        <h4><a href="index.html" class="navbar-brand m-0 p-0"><span>Measure International</span></a>
+                        </h4>
+                        <p class="mb-0" style="text-align: left;">Measure International specializes in transforming
+                            workspaces with comprehensive office
+                            interior design and turnkey fit-out solutions in Dubai.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info_detail">
+                        <h4>Company</h4>
+                        <p class="mb-0" style="text-align: left;">Creating functional, stylish, and comfortable office
+                            environments tailored to your needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4>Contact Us</h4>
+                    <div class="info_contact">
+                        <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>Dubai, UAE</span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>Call +971 55 589 1992</span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-envelope"></i>
+                            <span>info@measureinternational.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h4>Follow Us</h4>
+                    <div class="social_box">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                        <a href="https://www.linkedin.com/in/mamtashroff"><i class="fa fa-linkedin"
+                                aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/971555891992?text=Hello%20Measure%20International" target="_blank"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End info section -->
+
+    <!-- Footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://html.design/">Pearl White
+                    Web</a></p>
+        </div>
+    </footer>
+    <!-- End footer section -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+      <script>
+          let currentIndex = 0;
+
+          function slide(direction) {
+              const slides = document.querySelector('.services-slider .slides');
+              const totalSlides = slides.children.length;
+
+              if (direction === 'next') {
+                  currentIndex = (currentIndex + 1) % totalSlides;
+              } else if (direction === 'prev') {
+                  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+              }
+
+              const offset = -currentIndex * 100;
+              slides.style.transform = `translateX(${offset}%)`;
+          }
+      </script>
+
+</body>
+
+</html>
